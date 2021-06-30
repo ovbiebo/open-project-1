@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5988098909633967672}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.53, y: 3.43, z: 0.24}
+  m_LocalPosition: {x: -0.03, y: 7.76, z: 0.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6434799244096359547}
@@ -42,8 +42,55 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.89
+  m_Radius: 3.34
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &6754956797363694912
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1157582014463985259}
+  - component: {fileID: 3240971515933197726}
+  m_Layer: 0
+  m_Name: Light Probe Group
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1157582014463985259
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6754956797363694912}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.22, y: 1.67, z: 0.18}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6434799244096359547}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!220 &3240971515933197726
+LightProbeGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6754956797363694912}
+  m_Enabled: 1
+  m_SourcePositions:
+  - {x: 2.9505236, y: 2.1932707, z: 0.4321007}
+  - {x: 1.7362281, y: -0.6262684, z: 0.6704607}
+  - {x: -2.4288023, y: 3.3489447, z: 1.6985066}
+  - {x: -1.3478875, y: 2.227582, z: -3.29421}
+  - {x: -1.7080367, y: -0.8651689, z: 1.1814008}
+  - {x: -1.1097132, y: -0.34867764, z: -2.11101}
+  m_Dering: 1
 --- !u!136 &4744890041706611347
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -54,10 +101,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 5.197666
+  m_Radius: 0.6191793
+  m_Height: 8.660096
   m_Direction: 1
-  m_Center: {x: 0.22, y: 2, z: 0.049907267}
+  m_Center: {x: -0.064138055, y: 3.7312171, z: 0.023304084}
 --- !u!1001 &6829223592588061584
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -137,6 +184,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 0cc589ab20a19e14c9b7c52965ebd4eb,
         type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0cc589ab20a19e14c9b7c52965ebd4eb,
+        type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0cc589ab20a19e14c9b7c52965ebd4eb,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5ac3e6a034cf09849b9956bc922813e3, type: 2}
@@ -150,11 +207,6 @@ PrefabInstance:
       propertyPath: m_SelectedEditorRenderState
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -5754084199372789682, guid: 0cc589ab20a19e14c9b7c52965ebd4eb,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300000, guid: b5a5e4f841b9c4c40b3af05f245c9b47, type: 2}
     - target: {fileID: 919132149155446097, guid: 0cc589ab20a19e14c9b7c52965ebd4eb,
         type: 3}
       propertyPath: m_Name
@@ -168,6 +220,11 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0cc589ab20a19e14c9b7c52965ebd4eb,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0cc589ab20a19e14c9b7c52965ebd4eb,
+        type: 3}
+      propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0cc589ab20a19e14c9b7c52965ebd4eb,
